@@ -1,0 +1,88 @@
+.hidden {
+  display: none !important;
+}
+
+.no__overflow {
+  overflow: hidden;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
+section {
+  min-height: 100vh;
+}
+#quiz {
+  backdrop-filter: blur(25px);
+}
+
+#quiz__menu {
+  padding-top: 80px;
+  padding-bottom: 1rem;
+}
+
+img {
+  width: 100%;
+}
+
+.correct {
+  background-color: #9aeabc;
+}
+.incorrect {
+  background-color: #ff9393;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.html {
+  background-color: #ff9b82;
+}
+
+.css {
+  background-color: #4169e1;
+}
+
+.javascript {
+  background-color: #f0db4f;
+}
+
+.mysql {
+  background-color: #009688;
+}
+
+.python {
+  background-color: #357c5a;
+}
+
+.time_left_txt {
+  font-weight: 400;
+  font-size: 17px;
+  user-select: none;
+}
+
+.time_left{
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  border-radius: 50%;
+  background: #343a40;
+  border: 1px solid #343a40;
+  user-select: none;
+}
+
+.time_line {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #007bff;
+}

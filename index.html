@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SQUIZ - A Simple Quiz Game</title>
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="#intro" class="btn"
+            ><img src="./assets/logo.jpg" alt="Logo"
+          /></a>
+        </div>
+        <ul class="nav__list">
+          <li>
+            <a id="menu__btn" class="nav__link" href="#quiz__menu">Menu</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro">
+        <div class="container">
+          <div class="intro__content">
+            <h1>SQUIZ GAME</h1>
+            <p class="intro__content__text">
+              Get ready for the Code Conundrum! 🚀
+              <br />Challenge your HTML, CSS, JavaScript, and Software
+              Engineering skills in the most thrilling quiz game. <br />Think
+              fast, answer faster, and claim the title of Code Champion! 🏆
+              <br />Join the excitement now! 🌟
+            </p>
+
+            <a href="#quiz__menu" class="start__btn">START GAME</a>
+          </div>
+        </div>
+      </section>
+      <section id="quiz__menu">
+        <div class="container">
+          <h2>Choose Your Quiz</h2>
+          <div class="options__grid">
+            <article class="quiz__option">
+              <div class="img-container">
+                <img
+                  class="option__logo"
+                  src="./assets/HTML5 logo.png"
+                  alt="HTML image"
+                />
+              </div>
+              <div class="option__content">
+                <p>
+                  Explore the core of web design with our HTML quiz. Test your
+                  knowledge of structuring web content!
+                </p>
+                <a data-category="HTML" href="#quiz" class="tq-btn game__link"
+                  >Take Quiz <span class="bubble"></span
+                  ><span class="bubble"></span><span class="bubble"></span
+                  ><span class="bubble"></span
+                ></a>
+              </div>
+            </article>
+            <article class="quiz__option">
+              <div class="img-container">
+                <img
+                  class="option__logo"
+                  src="./assets/css logo.png"
+                  alt="CSS image"
+                />
+              </div>
+              <div class="option__content">
+                <p>
+                  Dive into the world of styling with our CSS quiz. Challenge
+                  yourself to create stunning web designs!
+                </p>
+                <a data-category="CSS" href="#quiz" class="tq-btn game__link"
+                  >Take Quiz <span class="bubble"></span
+                  ><span class="bubble"></span><span class="bubble"></span
+                  ><span class="bubble"></span
+                ></a>
+              </div>
+            </article>
+            <article class="quiz__option">
+              <div class="img-container">
+                <img
+                  class="option__logo"
+                  src="./assets/JavaScript logo.png"
+                  alt="JavaScript image"
+                />
+              </div>
+              <div class="option__content">
+                <p>
+                  Delve into interactive web development with our JavaScript
+                  quiz. Unlock the power of dynamic web pages!
+                </p>
+                <a
+                  data-category="JavaScript"
+                  href="#quiz"
+                  class="tq-btn game__link"
+                  >Take Quiz <span class="bubble"></span
+                  ><span class="bubble"></span><span class="bubble"></span
+                  ><span class="bubble"></span
+                ></a>
+              </div>
+            </article>
+            <article class="quiz__option">
+              <div class="img-container">
+                <img
+                  class="option__logo"
+                  src="./assets/python logo.png"
+                  alt="Python image"
+                />
+              </div>
+              <div class="option__content">
+                <p>
+                  Embark on a coding adventure with our Python quiz. Unleash
+                  your programming skills and conquer Python challenges!
+                </p>
+                <a data-category="Python" href="#quiz" class="tq-btn game__link"
+                  >Take Quiz <span class="bubble"></span
+                  ><span class="bubble"></span><span class="bubble"></span
+                  ><span class="bubble"></span
+                ></a>
+              </div>
+            </article>
+            <article class="quiz__option">
+              <div class="img-container">
+                <img
+                  class="option__logo"
+                  src="./assets/mysql logo.png"
+                  alt="MySQL image"
+                />
+              </div>
+              <div class="option__content">
+                <p>
+                  Discover the database magic with our MySQL quiz. Master data
+                  management and become a database guru!
+                </p>
+                <a data-category="MySQL" href="#quiz" class="tq-btn game__link"
+                  >Take Quiz <span class="bubble"></span
+                  ><span class="bubble"></span><span class="bubble"></span
+                  ><span class="bubble"></span
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="quiz" class="hidden">
+        <div class="container">
+          <div class="game">
+            <div class="preview">
+              <h2>
+                <span class="category"></span> Quiz
+                <div class="timer">
+                  <div class="time_left_txt">Time Left</div>
+                  <div class="time_left">15</div>
+                </div>
+              </h2>
+
+              <div class="time_line"></div>
+              <br />
+              <p class="the__question"></p>
+              <div class="options"></div>
+              <div class="next-btn-wrapper">
+                <button class="hidden next__btn">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
