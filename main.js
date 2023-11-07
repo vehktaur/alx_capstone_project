@@ -1,34 +1,7 @@
-/* 
-let sections = document.querySelectorAll('section');
-sections = Array.from(sections);
-const links = document.querySelectorAll('a');
-
-const showPage = (target) => {
-  const targetId = `${target.getAttribute('href')}`;
-  const section = document.querySelector(`${targetId}`);
-  section.classList.remove('hidden');
-
-  sections.forEach((otherSection) => {
-    if (otherSection != section) {
-      setTimeout(() => otherSection.classList.add('hidden'), 800);
-      console.log(otherSection, section);
-    }
-  });
-  console.log(targetId);
-};
-
-links.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    showPage(event.target);
-    console.log(links);
-  });
-});
-*/
-
 import quizArray from './questions.js';
 
 const body = document.querySelector('body');
-const menuButton = document.querySelector('#menu__btn');
+const menuButtons = document.querySelectorAll('.menu__btn');
 const gameLinks = document.querySelectorAll('.game__link');
 const quizCategoryTag = document.querySelector('.category');
 const questionTag = document.querySelector('.the__question');
@@ -143,4 +116,6 @@ const controlView = () => {
   quizSection.classList.add('hidden');
 };
 
-menuButton.addEventListener('click', controlView);
+menuButtons.forEach((menuBtn) => {
+  menuBtn.addEventListener('click', controlView);
+});
