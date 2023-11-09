@@ -308,7 +308,14 @@ const quizArray = [
             text: 'It positions an element relative to its nearest positioned ancestor.',
             correct: true
           },
-          { text: 'It makes an element transparent.', correct: false }
+          {
+            text: 'It makes an element absolute to a relative positioned element.',
+            correct: false
+          },
+          {
+            text: 'It gives an element a relatively large position.',
+            correct: false
+          }
         ]
       },
       {
